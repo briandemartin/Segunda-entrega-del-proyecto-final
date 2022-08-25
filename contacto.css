@@ -214,6 +214,18 @@ input:checked + .slider:before {
   transition-delay: 3s;
 }
 
+.parrafo {
+  border: 1px solid black;
+  margin: 40px;
+  background-color: beige;
+  font-size: 20px;
+}
+
+.foter {
+  display: flex;
+  justify-content: center;
+}
+
 @media (min-width: 300px) and (max-widt: 1300px) {
   .logo {
     width: 8rem;
@@ -270,3 +282,4 @@ input:checked + .slider:before {
     border-radius: 50%;
   }
 }
+
