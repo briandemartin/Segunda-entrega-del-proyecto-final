@@ -16,34 +16,81 @@
     />
   </head>
   <body>
- <!-- inicio header -->
- <header class="menu">
-  <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">ANAMAR</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-          <a class="nav-link active" href="./index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./perfumes.html">Perfumes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./contacto.html">Contacto</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./redes-sociales.html">Redes Sociales</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-</header>
-<!-- fin header -->
+    <!-- inicio navbar -->
+    <header class="menu">
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ANAMAR</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./perfumes.html">Perfumes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- fin navbar -->
+    <!-- inicio contacto -->
+    <main>
+      <div class="contact-container">
+        <div class="left-col"></div>
+        <div class="right-col">
+          <div class="theme-switch-wrapper"></div>
+
+          <h1>contacto</h1>
+
+          <form id="contact-form" method="post">
+            <label for="name">nombre</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="nombre"
+              required
+            />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email"
+              required
+            />
+            <label for="message">mensaje</label>
+            <textarea
+              rows="6"
+              placeholder="mensaje"
+              id="message"
+              name="message"
+              required
+            ></textarea>
+            <button>enviar</button>
+          </form>
+          <div id="error"></div>
+          <div id="success-msg"></div>
+        </div>
+      </div>
+    </main>
+    <!-- fin contacto -->
 
     <!-- JavaScript Bundle with Popper -->
     <script
